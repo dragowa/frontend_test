@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+
+</head>
+<body>
+
+<div class="window">
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-7">
+                <div class="tool">
+                    <div class="high_tool">
+                        <p> Ты здесь: </p>
+                        <img src="Google_Places_Logo.png">
+                        <p id="explain"> ул. Василия Липковского, 1а, Киев </p>
+                    </div>
+                    <div class="low_tool">
+                        <div class="tool-scroll-container">
+                            <div class="tool-scroll-list">
+                                <p> <span class="text-bold">Когнітивна психологія</span> - це вивчення у</p>
+                                <p> психології, що досліджує внутрішні розумові </p>
+                                <p> процеси, як-от процес вирішення проблеми, </p>
+                                <p> пам'ять та мовні процеси. Когнітивна </p>
+                                <p> психологія бере початок з пізньої моделі </p>
+                                <p> біхевіоризму </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"><div class="route_button">
+                      <div class="inside_button">
+                          <img src="route_icon.png">
+                          <span> Проложить маршрут </span>
+                      </div>
+                    </div></a>
+                </div>
+            </div>
+            <div class="offset-lg-5"></div>
+            <div class="col-lg-3 col-md-4">
+                <a href="#"><div class="inside_button_main">
+                    <img src="route_icon.png">
+                    <span> Проложить маршрут </span>
+                </div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKyNdMaS7uJAcmqPNLOK6zXO5qPmKpnwM&callback=initMap"
+        type="text/javascript"></script>
+</body>
+</html>
